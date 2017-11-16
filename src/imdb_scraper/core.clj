@@ -28,6 +28,7 @@
     [url reviewUrls]
     (writeToFile "robocop_reviews.txt" (getReviewHtml url))))
 
+;; time how long getAllReviews takes synchronously
 (defn -main
   []
-    (getAllReviews))
+    (time (getAllReviews)))
