@@ -1,6 +1,5 @@
 (ns imdb-scraper.core
-  (:require [clj-http.client :as client]
-            [falcon.core :as falcon]))
+  (:require [falcon.core :as falcon]))
 
 ; testing data for concurrency
 ; 457 reviews from 46 pages 
