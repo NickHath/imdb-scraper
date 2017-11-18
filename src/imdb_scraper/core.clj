@@ -27,7 +27,20 @@
     [url reviewUrls]
     (writeToFile "robocop_reviews.txt" (getReviewHtml url))))
 
+; (defn getPageNum [movie]
+;     (falcon/select
+;      (falcon/parse (str "http://www.imdb.com/title/" movie "/reviews"))
+;      "p"))
+
+; (defn generateUrls [pageRange]
+;   (let 
+;     [urls `()]
+;     (doseq ())))
+
 ;; time how long getAllReviews takes synchronously
+;; movie is a title id
+;; RoboCop - tt0093870
 (defn -main
-  []
+  [movie]
+    ; (getPageNum movie))
     (time (getAllReviews)))
